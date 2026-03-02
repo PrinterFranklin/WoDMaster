@@ -41,8 +41,12 @@ struct MainTabView: View {
         .tint(.orange)
         .onAppear {
             DataSeeder.seedMovementLibrary(context: modelContext)
-            DataSeeder.seedClassicWODs(context: modelContext)
+            DataSeeder.seedBenchmarkWODs(context: modelContext)
             DataSeeder.seedDefaultProfile(context: modelContext)
+        }
+        .task {
+            // Fetch new content from CloudKit Public Database in the background
+            await CloudKitSyncService.shared.syncAll(modelContext: modelContext)
         }
     }
 }

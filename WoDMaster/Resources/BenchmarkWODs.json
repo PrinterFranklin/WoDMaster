@@ -1,0 +1,151 @@
+[
+  {
+    "name": "Fran",
+    "wodType": "For Time",
+    "description": "21-15-9\nThrusters (43kg/30kg)\nPull-ups",
+    "timeCap": 600,
+    "rounds": 3,
+    "movements": [
+      {"movementName": "Thruster", "reps": 21, "weight": 43, "order": 0},
+      {"movementName": "Pull-up", "reps": 21, "order": 1},
+      {"movementName": "Thruster", "reps": 15, "weight": 43, "order": 2},
+      {"movementName": "Pull-up", "reps": 15, "order": 3},
+      {"movementName": "Thruster", "reps": 9, "weight": 43, "order": 4},
+      {"movementName": "Pull-up", "reps": 9, "order": 5}
+    ]
+  },
+  {
+    "name": "Murph",
+    "wodType": "For Time",
+    "description": "1 mile Run\n100 Pull-ups\n200 Push-ups\n300 Air Squats\n1 mile Run\n*With a 20/14 lb vest",
+    "movements": [
+      {"movementName": "Run", "reps": 1, "distance": 1600, "order": 0},
+      {"movementName": "Pull-up", "reps": 100, "order": 1},
+      {"movementName": "Push-up", "reps": 200, "order": 2},
+      {"movementName": "Air Squat", "reps": 300, "order": 3},
+      {"movementName": "Run", "reps": 1, "distance": 1600, "order": 4}
+    ]
+  },
+  {
+    "name": "Grace",
+    "wodType": "For Time",
+    "description": "30 Clean & Jerks (61kg/43kg)",
+    "timeCap": 600,
+    "movements": [
+      {"movementName": "Clean & Jerk", "reps": 30, "weight": 61, "order": 0}
+    ]
+  },
+  {
+    "name": "Diane",
+    "wodType": "For Time",
+    "description": "21-15-9\nDeadlifts (102kg/70kg)\nHandstand Push-ups",
+    "timeCap": 600,
+    "rounds": 3,
+    "movements": [
+      {"movementName": "Deadlift", "reps": 21, "weight": 102, "order": 0},
+      {"movementName": "Handstand Push-up", "reps": 21, "order": 1},
+      {"movementName": "Deadlift", "reps": 15, "weight": 102, "order": 2},
+      {"movementName": "Handstand Push-up", "reps": 15, "order": 3},
+      {"movementName": "Deadlift", "reps": 9, "weight": 102, "order": 4},
+      {"movementName": "Handstand Push-up", "reps": 9, "order": 5}
+    ]
+  },
+  {
+    "name": "Helen",
+    "wodType": "For Time",
+    "description": "3 Rounds:\n400m Run\n21 KB Swings (24kg/16kg)\n12 Pull-ups",
+    "rounds": 3,
+    "movements": [
+      {"movementName": "Run", "reps": 1, "distance": 400, "order": 0},
+      {"movementName": "Kettlebell Swing", "reps": 21, "weight": 24, "order": 1},
+      {"movementName": "Pull-up", "reps": 12, "order": 2}
+    ]
+  },
+  {
+    "name": "Cindy",
+    "wodType": "AMRAP",
+    "description": "20 min AMRAP:\n5 Pull-ups\n10 Push-ups\n15 Air Squats",
+    "timeCap": 1200,
+    "movements": [
+      {"movementName": "Pull-up", "reps": 5, "order": 0},
+      {"movementName": "Push-up", "reps": 10, "order": 1},
+      {"movementName": "Air Squat", "reps": 15, "order": 2}
+    ]
+  },
+  {
+    "name": "Annie",
+    "wodType": "For Time",
+    "description": "50-40-30-20-10\nDouble Unders\nSit-ups",
+    "rounds": 5,
+    "movements": [
+      {"movementName": "Double Under", "reps": 50, "order": 0},
+      {"movementName": "Sit-up", "reps": 50, "order": 1},
+      {"movementName": "Double Under", "reps": 40, "order": 2},
+      {"movementName": "Sit-up", "reps": 40, "order": 3},
+      {"movementName": "Double Under", "reps": 30, "order": 4},
+      {"movementName": "Sit-up", "reps": 30, "order": 5},
+      {"movementName": "Double Under", "reps": 20, "order": 6},
+      {"movementName": "Sit-up", "reps": 20, "order": 7},
+      {"movementName": "Double Under", "reps": 10, "order": 8},
+      {"movementName": "Sit-up", "reps": 10, "order": 9}
+    ]
+  },
+  {
+    "name": "Jackie",
+    "wodType": "For Time",
+    "description": "1000m Row\n50 Thrusters (20kg/15kg)\n30 Pull-ups",
+    "movements": [
+      {"movementName": "Row", "reps": 1, "order": 0},
+      {"movementName": "Thruster", "reps": 50, "weight": 20, "order": 1},
+      {"movementName": "Pull-up", "reps": 30, "order": 2}
+    ]
+  },
+  {
+    "name": "Elizabeth",
+    "wodType": "For Time",
+    "description": "21-15-9\nCleans (61kg/43kg)\nRing Dips",
+    "rounds": 3,
+    "movements": [
+      {"movementName": "Clean", "reps": 21, "weight": 61, "order": 0},
+      {"movementName": "Ring Dip", "reps": 21, "order": 1},
+      {"movementName": "Clean", "reps": 15, "weight": 61, "order": 2},
+      {"movementName": "Ring Dip", "reps": 15, "order": 3},
+      {"movementName": "Clean", "reps": 9, "weight": 61, "order": 4},
+      {"movementName": "Ring Dip", "reps": 9, "order": 5}
+    ]
+  },
+  {
+    "name": "Isabel",
+    "wodType": "For Time",
+    "description": "30 Snatches (61kg/43kg)",
+    "timeCap": 600,
+    "movements": [
+      {"movementName": "Snatch", "reps": 30, "weight": 61, "order": 0}
+    ]
+  },
+  {
+    "name": "Karen",
+    "wodType": "For Time",
+    "description": "150 Wall Balls (9kg/6kg)",
+    "movements": [
+      {"movementName": "Wall Ball", "reps": 150, "weight": 9, "order": 0}
+    ]
+  },
+  {
+    "name": "Filthy Fifty",
+    "wodType": "Chipper",
+    "description": "50 of each:\nBox Jumps, Jumping Pull-ups, KB Swings, Walking Lunges, K2E, Push Press, Back Extensions, Wall Balls, Burpees, Double Unders",
+    "movements": [
+      {"movementName": "Box Jump", "reps": 50, "order": 0},
+      {"movementName": "Jumping Pull-up", "reps": 50, "order": 1},
+      {"movementName": "Kettlebell Swing", "reps": 50, "weight": 16, "order": 2},
+      {"movementName": "Walking Lunge", "reps": 50, "order": 3},
+      {"movementName": "Knees-to-Elbow", "reps": 50, "order": 4},
+      {"movementName": "Push Press", "reps": 50, "weight": 20, "order": 5},
+      {"movementName": "Back Extension", "reps": 50, "order": 6},
+      {"movementName": "Wall Ball", "reps": 50, "weight": 9, "order": 7},
+      {"movementName": "Burpee", "reps": 50, "order": 8},
+      {"movementName": "Double Under", "reps": 50, "order": 9}
+    ]
+  }
+]

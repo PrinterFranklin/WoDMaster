@@ -232,24 +232,62 @@ To add new CrossFit movements to the default library:
 ```json
 {
   "name": "Movement Name",
-  "category": "Barbell",
+  "category": "Lift",
+  "tags": ["Barbell", "Squat", "Olympic"],
   "hasWeight": true,
   "hasDistance": false,
   "hasCalories": false,
   "hasTime": false,
-  "prTypes": ["oneRM", "threeRM", "fiveRM"]
+  "prTypes": ["oneRM", "threeRM", "fiveRM"],
+  "defaultRxWeightMale": 60,
+  "defaultRxWeightFemale": 40
 }
 ```
 
-### Available Categories
-`Barbell` · `Dumbbell` · `Kettlebell` · `Gymnastics` · `Monostructural` · `Weighted Bodyweight` · `Other`
+### Available Categories (3)
+| Category | Description | Example Movements |
+|----------|-------------|-------------------|
+| `Lift` | Loaded / weighted movements | Barbell Back Squat, DB Snatch, KB Swing |
+| `Gym` | Bodyweight / gymnastics | Pull-up, Muscle-up, Burpee, Handstand Walk |
+| `Cardio` | Monostructural / cardio | Run, Row, Bike, Double Under |
+
+### Available Tags (20)
+
+**Equipment tags**: `Barbell` · `Dumbbell` · `Kettlebell` · `Bar` · `Ring` · `Rope` · `Box` · `Machine` · `Jump Rope` · `Sled` · `Sandbag` · `Wall Ball`
+
+**Movement pattern tags**: `Squat` · `Pull` · `Push` · `Hinge` · `Core` · `Overhead` · `Carry` · `Olympic`
 
 ### PR Types
 `oneRM` · `threeRM` · `fiveRM` · `maxReps` · `maxDistance` · `maxCalories` · `maxDuration` · `bestTime`
 
+### Adding Benchmark WoDs
+
+To add new benchmark WoDs, edit `WoDMaster/Resources/BenchmarkWODs.json`:
+
+```json
+{
+  "name": "WoD Name",
+  "type": "forTime",
+  "description": "21-15-9 reps of:\nThrusters (95/65 lb)\nPull-ups",
+  "timeCap": 600,
+  "rounds": 3,
+  "movements": [
+    {
+      "movementName": "Thruster",
+      "reps": 21,
+      "weight": 43.0,
+      "weightUnit": "kg"
+    }
+  ]
+}
+```
+
+> ⚠️ **Important**: All `movementName` values in WoD definitions **must** match an existing movement name in `DefaultMovements.json`. The `DataSeeder` validates this at startup.
+
 ### Guidelines
 - Choose **property flags** (`hasWeight`, `hasDistance`, etc.) based on the movement's real-world characteristics
 - Choose **PR types** that make sense — e.g., running movements should have `bestTime`, not `oneRM`
+- Choose **tags** to describe equipment used and movement patterns
 - Movement names must be **unique** and cannot conflict with existing default movements
 
 ---
@@ -298,6 +336,9 @@ This project was **100% vibe coded** with AI pair programming. If you want to co
 3. **Movement data**: Lives in `DefaultMovements.json` — add new movements there, not in Swift code
 4. **Unit system**: The app supports both kg and lb, even mixed within the same WOD — always handle unit conversion
 5. **PR types are dynamic**: They're filtered based on movement properties, so make sure new movements have correct flags
+6. **Movement categories**: Use only `Lift`, `Gym`, or `Cardio` — the old 7-category system was removed in v0.1.0
+7. **Tags**: Leverage tags for fine-grained filtering — equipment tags (Barbell, Dumbbell...) and pattern tags (Squat, Pull...)
+8. **CloudKit**: The `CloudKitSyncService` is optional — app works in local-only mode without configuration
 
 ---
 

@@ -17,7 +17,7 @@ struct WODListView: View {
     
     enum WODFilterType: String, CaseIterable {
         case all = "All"
-        case classic = "Classic"
+        case benchmark = "Benchmark"
         case custom = "Custom"
     }
     
@@ -25,10 +25,10 @@ struct WODListView: View {
         var result = wods
         
         switch selectedFilter {
-        case .classic:
-            result = result.filter { $0.isClassic }
+        case .benchmark:
+            result = result.filter { $0.isBenchmark }
         case .custom:
-            result = result.filter { !$0.isClassic }
+            result = result.filter { !$0.isBenchmark }
         case .all:
             break
         }
@@ -81,7 +81,7 @@ struct WODListView: View {
     private func deleteWODs(offsets: IndexSet) {
         for index in offsets {
             let wod = filteredWODs[index]
-            if !wod.isClassic {
+            if !wod.isBenchmark {
                 modelContext.delete(wod)
             }
         }
@@ -97,12 +97,12 @@ struct WODRowView: View {
             // Type Icon
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(wod.isClassic ? Color.orange.opacity(0.2) : Color.blue.opacity(0.2))
+                    .fill(wod.isBenchmark ? Color.orange.opacity(0.2) : Color.blue.opacity(0.2))
                     .frame(width: 44, height: 44)
                 
                 Image(systemName: wod.wodType.icon)
                     .font(.title3)
-                    .foregroundColor(wod.isClassic ? .orange : .blue)
+                    .foregroundColor(wod.isBenchmark ? .orange : .blue)
             }
             
             VStack(alignment: .leading, spacing: 4) {
@@ -111,7 +111,7 @@ struct WODRowView: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                     
-                    if wod.isClassic {
+                    if wod.isBenchmark {
                         Image(systemName: "star.fill")
                             .font(.caption)
                             .foregroundColor(.orange)

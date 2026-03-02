@@ -7,20 +7,30 @@
 ## ✨ Features
 
 ### 🔥 WOD Management
-- Browse **classic benchmark WODs** (Fran, Murph, Grace, etc.)
+- Browse **12 benchmark WODs** (Fran, Murph, Grace, Helen, Diane, etc.)
 - Create **custom WODs** with support for:
   - For Time, AMRAP, EMOM, Tabata, Chipper, Ladder, Custom types
   - Configurable time caps, rounds, and EMOM intervals
 - Full **edit & delete** support for custom WODs
+- WoD movements **reference the movement library** — validated at seed time
 
 ### 💪 Movement Library
-- **167 built-in CrossFit movements** across 7 categories:
-  - Barbell (35) · Dumbbell (19) · Kettlebell (14) · Gymnastics (26)
-  - Monostructural (19) · Weighted Bodyweight (22) · Other/Bodyweight (32)
+- **167 built-in CrossFit movements** across 3 categories:
+  - **Lift** (90) — Barbell, dumbbell, kettlebell, and loaded movements
+  - **Gym** (58) — Bodyweight and gymnastics movements
+  - **Cardio** (19) — Running, rowing, cycling, jump rope, etc.
+- **20 filterable tags**: Barbell, Dumbbell, Kettlebell, Olympic, Squat, Pull, Push, Hinge, Core, Overhead, Bar, Ring, Rope, Box, Machine, Jump Rope, Sled, Sandbag, Wall Ball, Carry
 - Each movement has **smart property flags**: Weight, Distance, Calories, Time
-- **Add custom movements** with configurable properties and PR types
+- **Add custom movements** with configurable properties, PR types, and tags
 - Default movements are **protected** (cannot be edited/deleted)
 - Data stored in `DefaultMovements.json` — easy to maintain and extend
+
+### ☁️ CloudKit Sync (Optional)
+- **CloudKit Public Database** integration for remote content updates
+- New movements and WoDs pushed via CloudKit Dashboard
+- **Version-tracked incremental sync** — only fetches what's new
+- **Graceful local-only mode** — app works perfectly without CloudKit configured
+- iCloud account availability check before sync
 
 ### 🏆 Personal Records (PR)
 - Record PRs for any movement from the library
@@ -84,27 +94,28 @@ open WoDMaster/WoDMaster.xcodeproj
 
 ### First Launch
 On first launch, the app automatically:
-1. Seeds **167 default CrossFit movements** from `DefaultMovements.json`
-2. Creates **classic benchmark WODs** (Fran, Murph, Grace, etc.)
+1. Seeds **167 default CrossFit movements** (3 categories, 20 tags) from `DefaultMovements.json`
+2. Seeds **12 benchmark WoDs** (Fran, Murph, Grace, etc.) from `BenchmarkWODs.json`
 3. Initializes a **default user profile**
+4. Optionally syncs new content from **CloudKit Public Database** (if configured)
 
 ## 📁 Project Structure
 
 ```
 WoDMaster/
-├── WoDMasterApp.swift            # App entry point & SwiftData schema
+├── WoDMasterApp.swift            # App entry point, SwiftData schema & version management
 ├── ContentView.swift             # Root view
 ├── Models/
-│   ├── WOD.swift                 # WOD & WODMovement models
-│   ├── MovementLibraryItem.swift # Movement library model & enums
+│   ├── WOD.swift                 # WOD & WODMovement models (isBenchmark flag)
+│   ├── MovementLibraryItem.swift # Movement library: 3 categories + 20 tags
 │   ├── PersonalRecord.swift      # PR model with dynamic types
 │   ├── UserProfile.swift         # User profile & settings
 │   └── WorkoutResult.swift       # Workout result & round splits
 ├── Views/
-│   ├── MainTabView.swift         # Tab navigation (5 tabs)
-│   ├── MovementLibraryView.swift # Movement library management
+│   ├── MainTabView.swift         # Tab navigation (5 tabs) + CloudKit sync
+│   ├── MovementLibraryView.swift # Movement library with tag filtering
 │   ├── WOD/
-│   │   ├── WODListView.swift     # WOD list with classic/custom sections
+│   │   ├── WODListView.swift     # WOD list with benchmark/custom sections
 │   │   ├── WODDetailView.swift   # WOD detail with scaling suggestions
 │   │   └── AddWODView.swift      # Create/edit WOD with movement picker
 │   ├── PR/
@@ -117,13 +128,14 @@ WoDMaster/
 │   └── Profile/
 │       └── ProfileView.swift     # User profile settings
 ├── Services/
-│   ├── DefaultMovements.swift    # Loads defaults from JSON
-│   ├── MovementLoader.swift      # JSON parser (DTO → Model)
-│   ├── ClassicWODs.swift         # Classic benchmark WOD definitions
+│   ├── DefaultMovements.swift    # Loads movements & WoDs from JSON
+│   ├── MovementLoader.swift      # JSON parser (DTO → Model) for movements & WoDs
+│   ├── CloudKitSyncService.swift # CloudKit Public DB sync (optional)
 │   ├── DataSeeder.swift          # First-launch data initialization
 │   └── WorkoutEngine.swift       # Timer engine & scaling logic
 ├── Resources/
-│   └── DefaultMovements.json     # 167 movements as JSON data
+│   ├── DefaultMovements.json     # 167 movements (3 categories, 20 tags)
+│   └── BenchmarkWODs.json        # 12 benchmark WoDs as JSON data
 └── Utils/
     └── TimeFormatter.swift       # Time formatting utilities
 ```

@@ -37,7 +37,7 @@ enum WODType: String, Codable, CaseIterable, Identifiable {
 @Model
 final class WODMovement {
     var id: UUID
-    var movementName: String
+    var movementName: String  // Must match a name in MovementLibraryItem
     var reps: Int
     var weight: Double? // stored in the unit specified by weightUnit
     var weightUnit: WeightUnit? // the unit for this movement's weight (nil defaults to .kg)
@@ -102,13 +102,13 @@ final class WOD {
     var rounds: Int? // for AMRAP rounds or For Time rounds
     var emomInterval: Int? // in seconds for EMOM
     var movements: [WODMovement]
-    var isClassic: Bool // benchmark WOD
+    var isBenchmark: Bool // true for official benchmark WODs loaded from JSON/CloudKit
     var createdAt: Date
     
     @Relationship(deleteRule: .cascade, inverse: \WorkoutResult.wod)
     var results: [WorkoutResult]?
     
-    init(name: String, wodType: WODType, wodDescription: String = "", timeCap: Int? = nil, rounds: Int? = nil, emomInterval: Int? = nil, movements: [WODMovement] = [], isClassic: Bool = false) {
+    init(name: String, wodType: WODType, wodDescription: String = "", timeCap: Int? = nil, rounds: Int? = nil, emomInterval: Int? = nil, movements: [WODMovement] = [], isBenchmark: Bool = false) {
         self.id = UUID()
         self.name = name
         self.wodType = wodType
@@ -117,7 +117,7 @@ final class WOD {
         self.rounds = rounds
         self.emomInterval = emomInterval
         self.movements = movements
-        self.isClassic = isClassic
+        self.isBenchmark = isBenchmark
         self.createdAt = Date()
     }
     

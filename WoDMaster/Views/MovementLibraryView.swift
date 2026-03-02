@@ -14,6 +14,7 @@ struct MovementLibraryView: View {
     
     @State private var searchText = ""
     @State private var selectedCategory: MovementCategory?
+    @State private var selectedTag: MovementTag?
     @State private var showingAddMovement = false
     
     var filteredMovements: [MovementLibraryItem] {
@@ -21,10 +22,28 @@ struct MovementLibraryView: View {
         if let cat = selectedCategory {
             result = result.filter { $0.category == cat }
         }
+        if let tag = selectedTag {
+            result = result.filter { $0.hasTag(tag) }
+        }
         if !searchText.isEmpty {
             result = result.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
         }
         return result
+    }
+    
+    /// Tags available in the current filtered set (category-aware)
+    var availableTags: [MovementTag] {
+        let categoryFiltered: [MovementLibraryItem]
+        if let cat = selectedCategory {
+            categoryFiltered = movements.filter { $0.category == cat }
+        } else {
+            categoryFiltered = Array(movements)
+        }
+        var tagSet = Set<MovementTag>()
+        for m in categoryFiltered {
+            for t in m.tags { tagSet.insert(t) }
+        }
+        return MovementTag.allCases.filter { tagSet.contains($0) }
     }
     
     var groupedMovements: [(MovementCategory, [MovementLibraryItem])] {
@@ -53,6 +72,19 @@ struct MovementLibraryView: View {
                                 }
                                 .padding(.horizontal, 4)
                             }
+                            
+                            // Tag filter chips (shown when there are tags)
+                            if !availableTags.isEmpty {
+                                ScrollView(.horizontal, showsIndicators: false) {
+                                    HStack(spacing: 6) {
+                                        tagChip(nil, label: "All Tags")
+                                        ForEach(availableTags) { tag in
+                                            tagChip(tag, label: tag.rawValue)
+                                        }
+                                    }
+                                    .padding(.horizontal, 4)
+                                }
+                            }
                         }
                         .listRowInsets(EdgeInsets())
                         .listRowBackground(Color.clear)
@@ -71,6 +103,9 @@ struct MovementLibraryView: View {
                                         .foregroundColor(.orange)
                                     Text(category.rawValue)
                                         .fontWeight(.semibold)
+                                    Text("(\(category.description))")
+                                        .font(.caption2)
+                                        .foregroundColor(.secondary)
                                 }
                             }
                         }
@@ -113,7 +148,10 @@ struct MovementLibraryView: View {
     
     func categoryChip(_ category: MovementCategory?, label: String) -> some View {
         let isSelected = selectedCategory == category
-        return Button(action: { selectedCategory = category }) {
+        return Button(action: {
+            selectedCategory = category
+            selectedTag = nil // reset tag when category changes
+        }) {
             Text(label)
                 .font(.caption)
                 .fontWeight(.medium)
@@ -122,6 +160,27 @@ struct MovementLibraryView: View {
                 .background(isSelected ? Color.orange : Color(.systemGray5))
                 .foregroundColor(isSelected ? .white : .primary)
                 .cornerRadius(16)
+        }
+        .buttonStyle(.plain)
+    }
+    
+    func tagChip(_ tag: MovementTag?, label: String) -> some View {
+        let isSelected = selectedTag == tag
+        return Button(action: { selectedTag = tag }) {
+            HStack(spacing: 4) {
+                if let t = tag {
+                    Image(systemName: t.icon)
+                        .font(.caption2)
+                }
+                Text(label)
+                    .font(.caption2)
+                    .fontWeight(.medium)
+            }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(isSelected ? Color.blue : Color(.systemGray6))
+            .foregroundColor(isSelected ? .white : .secondary)
+            .cornerRadius(12)
         }
         .buttonStyle(.plain)
     }
@@ -141,6 +200,22 @@ struct MovementLibraryView: View {
                     }
                 }
                 
+                // Equipment/style tags
+                if !item.tags.isEmpty {
+                    HStack(spacing: 4) {
+                        ForEach(item.tags.prefix(4)) { tag in
+                            Text(tag.rawValue)
+                                .font(.caption2)
+                                .padding(.horizontal, 5)
+                                .padding(.vertical, 1)
+                                .background(Color.orange.opacity(0.12))
+                                .foregroundColor(.orange)
+                                .cornerRadius(4)
+                        }
+                    }
+                }
+                
+                // Property tags
                 HStack(spacing: 4) {
                     ForEach(item.propertyTags, id: \.self) { tag in
                         Text(tag)
@@ -188,7 +263,8 @@ struct AddCustomMovementView: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var name = ""
-    @State private var category: MovementCategory = .other
+    @State private var category: MovementCategory = .gym
+    @State private var selectedTags: Set<MovementTag> = []
     @State private var hasWeight = false
     @State private var hasDistance = false
     @State private var hasCalories = false
@@ -205,9 +281,30 @@ struct AddCustomMovementView: View {
                         ForEach(MovementCategory.allCases) { cat in
                             HStack {
                                 Image(systemName: cat.icon)
-                                Text(cat.rawValue)
+                                Text("\(cat.rawValue) — \(cat.description)")
                             }
                             .tag(cat)
+                        }
+                    }
+                }
+                
+                Section("Tags") {
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))], spacing: 8) {
+                        ForEach(MovementTag.allCases) { tag in
+                            Button(action: { toggleTag(tag) }) {
+                                HStack(spacing: 4) {
+                                    Image(systemName: tag.icon)
+                                        .font(.caption2)
+                                    Text(tag.rawValue)
+                                        .font(.caption)
+                                }
+                                .padding(.horizontal, 8)
+                                .padding(.vertical, 6)
+                                .background(selectedTags.contains(tag) ? Color.orange : Color(.systemGray5))
+                                .foregroundColor(selectedTags.contains(tag) ? .white : .primary)
+                                .cornerRadius(8)
+                            }
+                            .buttonStyle(.plain)
                         }
                     }
                 }
@@ -250,6 +347,14 @@ struct AddCustomMovementView: View {
         }
     }
     
+    func toggleTag(_ tag: MovementTag) {
+        if selectedTags.contains(tag) {
+            selectedTags.remove(tag)
+        } else {
+            selectedTags.insert(tag)
+        }
+    }
+    
     func togglePRType(_ type: AllowedPRType) {
         if selectedPRTypes.contains(type) {
             selectedPRTypes.remove(type)
@@ -263,6 +368,7 @@ struct AddCustomMovementView: View {
             name: name,
             category: category,
             isDefault: false,
+            tags: Array(selectedTags),
             hasWeight: hasWeight,
             hasDistance: hasDistance,
             hasCalories: hasCalories,

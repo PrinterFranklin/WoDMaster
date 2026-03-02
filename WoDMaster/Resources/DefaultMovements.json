@@ -1,1521 +1,2481 @@
 [
   {
     "name": "Back Squat",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Squat"
+    ]
   },
   {
     "name": "Front Squat",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Squat"
+    ]
   },
   {
     "name": "Overhead Squat",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Squat",
+      "Overhead"
+    ]
   },
   {
     "name": "Deadlift",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"],
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
     "defaultRxWeightMale": 102,
-    "defaultRxWeightFemale": 70
+    "defaultRxWeightFemale": 70,
+    "tags": [
+      "Barbell",
+      "Hinge"
+    ]
   },
   {
     "name": "Sumo Deadlift High Pull",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge"
+    ]
   },
   {
     "name": "Clean",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM"],
+    "allowedPRTypes": [
+      "1RM",
+      "3RM"
+    ],
     "defaultRxWeightMale": 61,
-    "defaultRxWeightFemale": 43
+    "defaultRxWeightFemale": 43,
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Olympic"
+    ]
   },
   {
     "name": "Power Clean",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Olympic"
+    ]
   },
   {
     "name": "Squat Clean",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Squat",
+      "Hinge",
+      "Olympic"
+    ]
   },
   {
     "name": "Hang Clean",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Olympic"
+    ]
   },
   {
     "name": "Clean & Jerk",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"],
+    "allowedPRTypes": [
+      "1RM"
+    ],
     "defaultRxWeightMale": 61,
-    "defaultRxWeightFemale": 43
+    "defaultRxWeightFemale": 43,
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Overhead",
+      "Olympic"
+    ]
   },
   {
     "name": "Snatch",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"],
+    "allowedPRTypes": [
+      "1RM"
+    ],
     "defaultRxWeightMale": 61,
-    "defaultRxWeightFemale": 43
+    "defaultRxWeightFemale": 43,
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Overhead",
+      "Olympic"
+    ]
   },
   {
     "name": "Power Snatch",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Overhead",
+      "Olympic"
+    ]
   },
   {
     "name": "Squat Snatch",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Squat",
+      "Hinge",
+      "Overhead",
+      "Olympic"
+    ]
   },
   {
     "name": "Hang Snatch",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Overhead",
+      "Olympic"
+    ]
   },
   {
     "name": "Push Press",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"],
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
     "defaultRxWeightMale": 20,
-    "defaultRxWeightFemale": 15
+    "defaultRxWeightFemale": 15,
+    "tags": [
+      "Barbell",
+      "Push"
+    ]
   },
   {
     "name": "Shoulder Press",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Push"
+    ]
   },
   {
     "name": "Push Jerk",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Push",
+      "Hinge",
+      "Overhead",
+      "Olympic"
+    ]
   },
   {
     "name": "Split Jerk",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Overhead",
+      "Olympic"
+    ]
   },
   {
     "name": "Thruster",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"],
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
     "defaultRxWeightMale": 43,
-    "defaultRxWeightFemale": 30
+    "defaultRxWeightFemale": 30,
+    "tags": [
+      "Barbell",
+      "Squat"
+    ]
   },
   {
     "name": "Bench Press",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Push"
+    ]
   },
   {
     "name": "Barbell Row",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Pull"
+    ]
   },
   {
     "name": "Barbell Lunge",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Distance"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Distance"
+    ],
+    "tags": [
+      "Barbell"
+    ]
   },
   {
     "name": "Cluster",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Olympic"
+    ]
   },
   {
     "name": "Romanian Deadlift",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge"
+    ]
   },
   {
     "name": "Deficit Deadlift",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge"
+    ]
   },
   {
     "name": "Hang Power Clean",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Olympic"
+    ]
   },
   {
     "name": "Hang Power Snatch",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Hinge",
+      "Overhead",
+      "Olympic"
+    ]
   },
   {
     "name": "Strict Press",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Push"
+    ]
   },
   {
     "name": "Incline Bench Press",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Push"
+    ]
   },
   {
     "name": "Pendlay Row",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell",
+      "Pull"
+    ]
   },
   {
     "name": "Overhead Walking Lunge",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Distance"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Distance"
+    ],
+    "tags": [
+      "Barbell",
+      "Carry",
+      "Overhead"
+    ]
   },
   {
     "name": "Barbell Hip Thrust",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell"
+    ]
   },
   {
     "name": "Good Morning",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM", "5RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM",
+      "5RM"
+    ],
+    "tags": [
+      "Barbell"
+    ]
   },
   {
     "name": "Barbell Curl",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Barbell"
+    ]
   },
   {
     "name": "Barbell Overhead Carry",
-    "category": "Barbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance"]
+    "allowedPRTypes": [
+      "Max Distance"
+    ],
+    "tags": [
+      "Barbell",
+      "Carry",
+      "Overhead"
+    ]
   },
   {
     "name": "DB Snatch",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Hinge",
+      "Overhead"
+    ]
   },
   {
     "name": "DB Clean & Jerk",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Hinge",
+      "Overhead"
+    ]
   },
   {
     "name": "DB Thruster",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Squat"
+    ]
   },
   {
     "name": "DB Overhead Lunge",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance"]
+    "allowedPRTypes": [
+      "Max Distance"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Overhead"
+    ]
   },
   {
     "name": "Devil Press",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Push"
+    ]
   },
   {
     "name": "Man Maker",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell"
+    ]
   },
   {
     "name": "DB Power Snatch",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Hinge",
+      "Overhead"
+    ]
   },
   {
     "name": "DB Clean",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Hinge"
+    ]
   },
   {
     "name": "DB Front Squat",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Squat"
+    ]
   },
   {
     "name": "DB Walking Lunge",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance"]
+    "allowedPRTypes": [
+      "Max Distance"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Carry"
+    ]
   },
   {
     "name": "DB Shoulder Press",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Push"
+    ]
   },
   {
     "name": "DB Push Press",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Push"
+    ]
   },
   {
     "name": "DB Bench Press",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "3RM"]
+    "allowedPRTypes": [
+      "1RM",
+      "3RM"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Push"
+    ]
   },
   {
     "name": "DB Row",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Pull"
+    ]
   },
   {
     "name": "DB Deadlift",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Hinge"
+    ]
   },
   {
     "name": "DB Hang Clean",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Hinge"
+    ]
   },
   {
     "name": "DB Step-up",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Dumbbell"
+    ]
   },
   {
     "name": "DB Turkish Get-up",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Dumbbell"
+    ]
   },
   {
     "name": "DB Farmer's Carry",
-    "category": "Dumbbell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance", "Best Time"]
+    "allowedPRTypes": [
+      "Max Distance",
+      "Best Time"
+    ],
+    "tags": [
+      "Dumbbell",
+      "Carry"
+    ]
   },
   {
     "name": "Kettlebell Swing",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"],
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
     "defaultRxWeightMale": 24,
-    "defaultRxWeightFemale": 16
+    "defaultRxWeightFemale": 16,
+    "tags": [
+      "Kettlebell",
+      "Hinge"
+    ]
   },
   {
     "name": "KB Goblet Squat",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Squat"
+    ]
   },
   {
     "name": "KB Turkish Get-up",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Kettlebell"
+    ]
   },
   {
     "name": "KB Snatch",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Hinge",
+      "Overhead"
+    ]
   },
   {
     "name": "American KB Swing",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Hinge"
+    ]
   },
   {
     "name": "Russian KB Swing",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Hinge"
+    ]
   },
   {
     "name": "KB Clean",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Hinge"
+    ]
   },
   {
     "name": "KB Clean & Press",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Push",
+      "Hinge"
+    ]
   },
   {
     "name": "KB Thruster",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Squat"
+    ]
   },
   {
     "name": "KB Overhead Carry",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance"]
+    "allowedPRTypes": [
+      "Max Distance"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Carry",
+      "Overhead"
+    ]
   },
   {
     "name": "KB Front Rack Carry",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance"]
+    "allowedPRTypes": [
+      "Max Distance"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Carry"
+    ]
   },
   {
     "name": "KB Windmill",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": [
+      "Kettlebell"
+    ]
   },
   {
     "name": "KB Deadlift",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Hinge"
+    ]
   },
   {
     "name": "KB Swing (Single Arm)",
-    "category": "Kettlebell",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Kettlebell",
+      "Hinge"
+    ]
   },
   {
     "name": "Pull-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Chest-to-Bar Pull-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Muscle-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Pull"
+    ]
   },
   {
     "name": "Bar Muscle-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Ring Muscle-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Ring",
+      "Pull"
+    ]
   },
   {
     "name": "Ring Dip",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Ring",
+      "Push"
+    ]
   },
   {
     "name": "Handstand Push-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Push",
+      "Overhead"
+    ]
   },
   {
     "name": "Strict Handstand Push-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Push",
+      "Overhead"
+    ]
   },
   {
     "name": "Handstand Walk",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance"]
+    "allowedPRTypes": [
+      "Max Distance"
+    ],
+    "tags": [
+      "Carry",
+      "Overhead"
+    ]
   },
   {
     "name": "Toes-to-Bar",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar"
+    ]
   },
   {
     "name": "Knees-to-Elbow",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar"
+    ]
   },
   {
     "name": "L-sit",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": true,
-    "allowedPRTypes": ["Max Duration"]
+    "allowedPRTypes": [
+      "Max Duration"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "Rope Climb",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time", "Max Reps"]
+    "allowedPRTypes": [
+      "Best Time",
+      "Max Reps"
+    ],
+    "tags": [
+      "Rope"
+    ]
   },
   {
     "name": "Legless Rope Climb",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time", "Max Reps"]
+    "allowedPRTypes": [
+      "Best Time",
+      "Max Reps"
+    ],
+    "tags": [
+      "Rope"
+    ]
   },
   {
     "name": "Pistol Squat",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Squat"
+    ]
   },
   {
     "name": "Strict Pull-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Kipping Pull-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Butterfly Pull-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Strict Ring Dip",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Ring",
+      "Push"
+    ]
   },
   {
     "name": "Ring Row",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Ring",
+      "Pull"
+    ]
   },
   {
     "name": "Deficit HSPU",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Push"
+    ]
   },
   {
     "name": "Handstand Hold",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": true,
-    "allowedPRTypes": ["Max Duration"]
+    "allowedPRTypes": [
+      "Max Duration"
+    ],
+    "tags": [
+      "Overhead"
+    ]
   },
   {
     "name": "Hanging Knee Raise",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "L-Pull-up",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Pegboard",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Skin the Cat",
-    "category": "Gymnastics",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Run",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "200m Run",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "400m Run",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "800m Run",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "1 Mile Run",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "5K Run",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "10K Run",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "Row",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": true,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time", "Max Calories"]
+    "allowedPRTypes": [
+      "Best Time",
+      "Max Calories"
+    ],
+    "tags": [
+      "Machine"
+    ]
   },
   {
     "name": "500m Row",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": [
+      "Machine"
+    ]
   },
   {
     "name": "1K Row",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": [
+      "Machine"
+    ]
   },
   {
     "name": "2K Row",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": [
+      "Machine"
+    ]
   },
   {
     "name": "Bike (Assault/Echo)",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": true,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time", "Max Calories"]
+    "allowedPRTypes": [
+      "Best Time",
+      "Max Calories"
+    ],
+    "tags": [
+      "Machine"
+    ]
   },
   {
     "name": "Bike Erg",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": true,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time", "Max Calories"]
+    "allowedPRTypes": [
+      "Best Time",
+      "Max Calories"
+    ],
+    "tags": [
+      "Machine"
+    ]
   },
   {
     "name": "Ski Erg",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": true,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time", "Max Calories"]
+    "allowedPRTypes": [
+      "Best Time",
+      "Max Calories"
+    ],
+    "tags": [
+      "Machine"
+    ]
   },
   {
     "name": "Swim",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "Crossover",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Jump Rope"
+    ]
   },
   {
     "name": "Double Under",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Jump Rope"
+    ]
   },
   {
     "name": "Single Under",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Jump Rope"
+    ]
   },
   {
     "name": "Triple Under",
-    "category": "Monostructural",
+    "category": "Cardio",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Jump Rope"
+    ]
   },
   {
     "name": "Weighted Pull-up",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Weighted Dip",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Push"
+    ]
   },
   {
     "name": "Wall Ball",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"],
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
     "defaultRxWeightMale": 9,
-    "defaultRxWeightFemale": 6
+    "defaultRxWeightFemale": 6,
+    "tags": [
+      "Wall Ball"
+    ]
   },
   {
     "name": "Ball Slam",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Walking Lunge",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance", "Max Reps"]
+    "allowedPRTypes": [
+      "Max Distance",
+      "Max Reps"
+    ],
+    "tags": [
+      "Carry"
+    ]
   },
   {
     "name": "Sled Push",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": [
+      "Sled",
+      "Push"
+    ]
   },
   {
     "name": "Sled Pull",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": [
+      "Sled"
+    ]
   },
   {
     "name": "Farmer's Carry",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance", "Best Time"]
+    "allowedPRTypes": [
+      "Max Distance",
+      "Best Time"
+    ],
+    "tags": [
+      "Carry"
+    ]
   },
   {
     "name": "Yoke Carry",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance", "1RM"]
+    "allowedPRTypes": [
+      "Max Distance",
+      "1RM"
+    ],
+    "tags": [
+      "Carry"
+    ]
   },
   {
     "name": "Weighted Lunge",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance", "Max Reps"]
+    "allowedPRTypes": [
+      "Max Distance",
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Weighted Step-up",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Weighted Box Jump",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Box"
+    ]
   },
   {
     "name": "Wall Ball (Target)",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Wall Ball"
+    ]
   },
   {
     "name": "D-Ball Clean",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Hinge"
+    ]
   },
   {
     "name": "D-Ball Over Shoulder",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Atlas Stone",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM"]
+    "allowedPRTypes": [
+      "1RM"
+    ],
+    "tags": []
   },
   {
     "name": "Sandbag Clean",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Sandbag",
+      "Hinge"
+    ]
   },
   {
     "name": "Sandbag Carry",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance", "Best Time"]
+    "allowedPRTypes": [
+      "Max Distance",
+      "Best Time"
+    ],
+    "tags": [
+      "Sandbag",
+      "Carry"
+    ]
   },
   {
     "name": "Sandbag Over Shoulder",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["1RM", "Max Reps"]
+    "allowedPRTypes": [
+      "1RM",
+      "Max Reps"
+    ],
+    "tags": [
+      "Sandbag"
+    ]
   },
   {
     "name": "Tire Flip",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Rope Sled Pull",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": [
+      "Sled"
+    ]
   },
   {
     "name": "Weighted Vest Run",
-    "category": "Weighted Bodyweight",
+    "category": "Lift",
     "hasWeight": true,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Best Time"]
+    "allowedPRTypes": [
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "Push-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Push"
+    ]
   },
   {
     "name": "Air Squat",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Squat"
+    ]
   },
   {
     "name": "Sit-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "GHD Sit-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "Back Extension",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "GHD Hip Extension",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "Burpee",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps", "Best Time"]
+    "allowedPRTypes": [
+      "Max Reps",
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "Burpee Box Jump Over",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Box"
+    ]
   },
   {
     "name": "Box Jump",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Box"
+    ]
   },
   {
     "name": "Box Jump Over",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Box"
+    ]
   },
   {
     "name": "Jumping Pull-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Plank",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": true,
-    "allowedPRTypes": ["Max Duration"]
+    "allowedPRTypes": [
+      "Max Duration"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "Wall Sit",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": true,
-    "allowedPRTypes": ["Max Duration"]
+    "allowedPRTypes": [
+      "Max Duration"
+    ],
+    "tags": []
   },
   {
     "name": "Hand Release Push-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Push"
+    ]
   },
   {
     "name": "Diamond Push-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Push"
+    ]
   },
   {
     "name": "Jumping Squat",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Squat"
+    ]
   },
   {
     "name": "V-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "Hollow Rock",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "Hollow Hold",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": true,
-    "allowedPRTypes": ["Max Duration"]
+    "allowedPRTypes": [
+      "Max Duration"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "Superman Hold",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": true,
-    "allowedPRTypes": ["Max Duration"]
+    "allowedPRTypes": [
+      "Max Duration"
+    ],
+    "tags": [
+      "Core"
+    ]
   },
   {
     "name": "Bar-Facing Burpee",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Burpee Over Bar",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Burpee Pull-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Bar",
+      "Pull"
+    ]
   },
   {
     "name": "Step-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Box Step-up",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Box"
+    ]
   },
   {
     "name": "Broad Jump",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance"]
+    "allowedPRTypes": [
+      "Max Distance"
+    ],
+    "tags": []
   },
   {
     "name": "Lunge",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Bear Crawl",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance", "Best Time"]
+    "allowedPRTypes": [
+      "Max Distance",
+      "Best Time"
+    ],
+    "tags": []
   },
   {
     "name": "Crab Walk",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": true,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Distance"]
+    "allowedPRTypes": [
+      "Max Distance"
+    ],
+    "tags": [
+      "Carry"
+    ]
   },
   {
     "name": "Mountain Climber",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": []
   },
   {
     "name": "Dip",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": false,
-    "allowedPRTypes": ["Max Reps"]
+    "allowedPRTypes": [
+      "Max Reps"
+    ],
+    "tags": [
+      "Push"
+    ]
   },
   {
     "name": "Side Plank",
-    "category": "Other",
+    "category": "Gym",
     "hasWeight": false,
     "hasDistance": false,
     "hasCalories": false,
     "hasTime": true,
-    "allowedPRTypes": ["Max Duration"]
+    "allowedPRTypes": [
+      "Max Duration"
+    ],
+    "tags": [
+      "Core"
+    ]
   }
 ]

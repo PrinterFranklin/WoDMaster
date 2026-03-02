@@ -448,6 +448,6 @@ struct WorkoutTimerView: View {
 }
 
 #Preview {
-    WorkoutTimerView(wod: ClassicWODs.fran())
+        WorkoutTimerView(wod: WOD(name: "Preview WOD", wodType: .forTime, wodDescription: "Preview", isBenchmark: true))
         .modelContainer(for: [WOD.self, WorkoutResult.self], inMemory: true)
 }

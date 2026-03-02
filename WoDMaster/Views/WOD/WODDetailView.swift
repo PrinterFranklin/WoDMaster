@@ -46,7 +46,7 @@ struct WODDetailView: View {
             }
         }
         .toolbar {
-            if !wod.isClassic {
+            if !wod.isBenchmark {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: { showingEdit = true }) {
                         Image(systemName: "pencil.circle")
@@ -76,7 +76,7 @@ struct WODDetailView: View {
                             .foregroundColor(.orange)
                     }
                     
-                    if wod.isClassic {
+                    if wod.isBenchmark {
                         HStack(spacing: 4) {
                             Image(systemName: "star.fill")
                                 .font(.caption)
@@ -210,7 +210,7 @@ struct WODDetailView: View {
                 .cornerRadius(16)
             }
             
-            if !wod.isClassic {
+            if !wod.isBenchmark {
                 Button(action: { showingEdit = true }) {
                     HStack {
                         Image(systemName: "pencil")
@@ -242,7 +242,7 @@ struct WODDetailView: View {
 
 #Preview {
     NavigationStack {
-        WODDetailView(wod: ClassicWODs.fran())
+        WODDetailView(wod: WOD(name: "Preview WOD", wodType: .forTime, wodDescription: "Preview", isBenchmark: true))
     }
     .modelContainer(for: [WOD.self, PersonalRecord.self, UserProfile.self], inMemory: true)
 }

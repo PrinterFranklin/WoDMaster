@@ -392,7 +392,7 @@ struct AddWODView: View {
                 rounds: rounds,
                 emomInterval: wodType == .emom ? emomInterval : nil,
                 movements: movements,
-                isClassic: false
+                isBenchmark: false
             )
             modelContext.insert(wod)
         }
