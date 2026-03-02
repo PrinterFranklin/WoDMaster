@@ -136,17 +136,26 @@ See [`.ai-context/DEVELOPMENT_STORY.md`](.ai-context/DEVELOPMENT_STORY.md) for t
 
 ## 🔄 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/awesome-feature`)
-3. Commit your changes (`git commit -m 'Add awesome feature'`)
-4. Push to the branch (`git push origin feature/awesome-feature`)
-5. Open a Pull Request
+We welcome contributions! Please read our **[Contributing Guide](CONTRIBUTING.md)** for detailed information on:
 
-### Vibe Coding Tips
-- Read `.ai-context/DEVELOPMENT_STORY.md` to understand the full context
-- The project uses **SwiftData** — no Core Data or third-party ORMs
-- Movement data lives in `DefaultMovements.json` — add new movements there
-- All PR types are dynamically filtered based on movement properties
+- 🌿 **Branch strategy** — GitHub Flow + Release branches
+- 🔀 **Development workflow** — feature, release, and hotfix processes
+- 🤝 **How to contribute** — Fork + PR or Patch mode
+- 📝 **Commit convention** — Conventional Commits standard
+- 💡 **Code style** — SwiftUI + SwiftData best practices
+- 🏋️ **Adding movements** — how to extend the movement library
+
+### Quick Start
+
+```bash
+# Fork → Clone → Branch → Code → PR
+git checkout develop
+git checkout -b feature/awesome-feature
+# Make your changes...
+git commit -m "feat: add awesome feature"
+git push origin feature/awesome-feature
+# Open a PR → develop
+```
 
 ## 📋 License
 
